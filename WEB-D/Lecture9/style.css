@@ -1,0 +1,48 @@
+.first{
+    height: 200px;
+    width: 200px;
+    background-color: khaki;
+    border: 2px solid black;
+}
+.first:hover{
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    transition-duration: 2000ms;
+    transition-property: border-radius,background-color;
+    /* transition-property: all; */
+    transition-timing-function: linear;
+}
+.child{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    transition-duration: 4s;
+}
+
+.parent:hover .child{
+    width: 100vw;
+}
+
+
+.child-1{
+    transition-timing-function: linear;
+    background-color: aqua;
+}
+
+.child-2{
+    transition-timing-function: ease-in;
+    background-color: burlywood;
+}
+
+.child-3{
+    transition-timing-function: ease-out;
+    background-color: rgb(181, 124, 124);
+}
+
+.child-4{
+    transition-timing-function: ease-in-out;
+    background-color: rgb(11, 117, 13);
+}
+
+
+

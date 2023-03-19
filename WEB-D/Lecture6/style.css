@@ -1,0 +1,17 @@
+h1{
+    width: 400px;
+    height: 200px;
+    background-color: aqua;
+    margin: 42px 30px 22px 52px ;  /* top right bottom left */
+    border: 2px solid red;
+    padding: 40px;
+}
+
+span{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 1, 1);
+    margin: 30px 44px;   /* top bottom */
+    border: 10px solid blue;
+    padding: 50px;
+}

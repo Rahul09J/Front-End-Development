@@ -1,0 +1,79 @@
+/* adjacent sibling */
+/* div h1+p{
+    background-color: red;
+}
+
+general sibling 
+div h1~p{
+    background-color: blue;
+} */
+/* 
+pseudo classes : 
+:hover
+:focus
+:active
+:visited */
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+div:hover{
+    border-radius: 50%;
+    background-color: chocolate;
+
+}
+
+input:hover{
+    background-color: rgb(150, 124, 76);
+}
+
+input:focus{
+    background-color: rebeccapurple;
+}
+
+input:active{
+    background-color: rgb(34, 0, 255);
+}
+
+a:visited{
+    color: palevioletred;
+}
+
+/* Structure Pseudo Classes */
+/* 
+ul li:first-child{
+    background-color: aqua;
+}
+ul li:last-child{
+    background-color: rgb(0, 255, 0);
+}
+
+ul li:nth-child(4){
+    background-color: brown;
+}
+ul LI:nth-child(even){
+    color: rgb(255, 0, 0);
+} */
+
+/* PSEUDO ELements */
+
+p::first-line{
+    color: blueviolet;
+}
+
+p::first-letter{
+    font-size: 50px;
+}
+p::after{
+    content: "  I am a new Content";
+}
+
+p::after{
+    content: "2644";
+}
+
+ul>li{
+    border: 2px solid red;
+}

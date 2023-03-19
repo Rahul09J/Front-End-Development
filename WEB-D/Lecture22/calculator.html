@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div>
+        <input type="text"><br><br>
+        <div>
+            <button>AC</button>
+            <button>**</button>
+            <button>%</button>
+            <button>/</button><br>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>*</button><br>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button><br>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button><br>
+
+            <button>#</button>
+            <button>0</button>
+            <button>.</button>
+            <button>=</button><br>
+        </div>
+    </div>
+
+    <script>
+        let inp = document.querySelector('input');
+        let btn = document.querySelectorAll('button');
+
+        for( let buttons of btn){
+            buttons.addEventListener('click',function(e){
+                let btnText = e.target.innerText;
+
+                if(btnText==='AC'){
+                    inp.value="";
+                }
+                else if(btnText==='='){
+                    try{
+                        inp.value=eval(inp.value)
+                    }
+                    catch{
+                        inp.value = "Syntax Error"
+                    }
+                    
+                }
+                else{
+                    inp.value = inp.value + btnText;
+                }
+                
+            })
+            
+        }
+        
+    </script>
+</body>
+</html>

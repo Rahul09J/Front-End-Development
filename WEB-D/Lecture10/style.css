@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    background-color: tomato;
+    align-items: center;
+    min-height: 50px;
+    position: fixed;
+    width: 100vw;
+}
+.ull{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vh;
+}
+ul{
+    list-style: none;
+}
+
+@media screen and (max-width:576px) {
+    div,.ull{
+        flex-direction: column;
+        align-items: center;
+    }
+}

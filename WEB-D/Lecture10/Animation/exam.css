@@ -1,0 +1,22 @@
+div{
+    border: 5px solid black;
+    border-radius: 50%;
+    border-top-color: red;
+    height: 100px;
+    width: 100px;
+    animation-name: ball;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes ball {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+

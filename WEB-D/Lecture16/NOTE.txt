@@ -1,0 +1,35 @@
+1) let variable 
+
+redeclation is not possible 
+
+let name = 'Rahul';
+let name = 19;   not possible in case of let 
+
+
+Re-initialisation is possible 
+
+let name = 'Rahul';
+name = 19;   possible
+
+2) const variable
+
+redeclation and Re-initialisation are not possible
+
+const name = 'Rahul';  possible
+
+const name;
+name = 'Rahul';     Not possible in case of const
+
+const name = 'Rahul'
+name = 21     reinitialisation is not possible
+
+3) var 
+
+Re declaration and re initialisation is possible
+
+var name = 'rahul';
+var name = 21;    possible 
+
+
+let & const ---> block scope
+var ---> functional scope

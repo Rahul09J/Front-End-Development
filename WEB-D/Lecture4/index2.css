@@ -1,0 +1,11 @@
+div a{
+    background-color: tomato;
+}
+
+div strong{
+    font-size: 100px;
+}
+
+p > strong{
+    background-color: salmon;
+}

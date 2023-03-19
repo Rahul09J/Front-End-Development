@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUbmit Functioning</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="Enter the data" id="">
+        <button type="submit">Submit</button>
+        <ul></ul>
+    </form>
+    
+    <script>
+        let form = document.querySelector('form');
+        let inp = document.querySelector('input');
+        let btn = document.querySelector('button');
+        let ul = document.querySelector('ul');
+
+        btn.addEventListener('click',function(e){
+            e.preventDefault();
+            let li = document.createElement('li');
+            li.innerText=inp.value;
+            ul.append(li);
+            inp.value = '';
+
+            li.addEventListener('click',function(){
+                li.remove();
+            })
+        })
+        
+
+
+
+        
+    </script>
+</body>
+</html>

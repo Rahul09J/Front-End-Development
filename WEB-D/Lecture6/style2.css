@@ -1,0 +1,50 @@
+div{
+    border: 3px solid red;;
+    height: 100px;
+    width: 100px;
+    display: inline-block
+    ;
+}
+
+#static #middle{
+    background-color: yellow;
+    top: 20px;
+    left: 20px;
+    position: static;  /* static me of set nhi chalte */
+    
+}
+
+#relative #middle{
+    background-color: rgb(15, 152, 250);
+    top: 20px;
+    left: 20px;
+    position: relative; /*relative upset */
+}
+
+#absolute{
+    position: relative;
+}
+
+#absolute #middle{
+    background-color: rgb(35, 255, 49);
+    top: 20px;
+    left: 20px;
+    position: absolute; /*relative upset */
+}
+
+#fixed #middle{
+    background-color: rgb(206, 22, 148);
+    top: 20px;
+    left: 120px;
+    position: fixed;
+}
+
+#sticky{
+    height: 500px;
+}
+
+#sticky #middle{
+    background-color: tomato;
+    top: 150px;
+    position: sticky;
+}

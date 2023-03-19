@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <img src="" alt="">
+    
+    <script>
+        let arr = [
+            'https://images.unsplash.com/photo-1662675120615-a1c84ded33f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+            'https://images.unsplash.com/photo-1662988890828-44464d1e0d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
+            'https://images.unsplash.com/photo-1662981187375-d1774d2a2263?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
+            'https://images.unsplash.com/photo-1662898121819-d10095cf7ed6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60'
+        ]
+
+        let image = document.querySelector('img');
+        let n=0;
+        setInterval(function(){
+            image.setAttribute('src',arr[n]);
+            n=(n+1)%arr.length();  // taki last index kebaad firse 0 pe aa jae
+        },2000)
+    </script>
+</body>
+</html>
